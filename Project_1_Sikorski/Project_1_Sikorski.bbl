@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Jolkkonen2017}
+M.~Jolkkonen, P.~Malkki, K.~Johnson, J.~Wallenius,
+  \href{https://www.tandfonline.com/doi/full/10.1080/00223131.2017.1291372}{{Uranium
+  nitride fuels in superheated steam}}, Journal of Nuclear Science and
+  Technology 54~(5) (2017) 513--519.
+\newblock \href {http://dx.doi.org/10.1080/00223131.2017.1291372}
+  {\path{doi:10.1080/00223131.2017.1291372}}.
+\newline\urlprefix\url{https://www.tandfonline.com/doi/full/10.1080/00223131.2017.1291372}
+
+\end{thebibliography}

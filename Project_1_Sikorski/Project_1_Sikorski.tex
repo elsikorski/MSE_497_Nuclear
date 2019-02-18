@@ -1,0 +1,74 @@
+\documentclass[3p,review,11pt]{elsarticle}
+\usepackage{lineno,hyperref,notoccite,etoolbox}
+\modulolinenumbers[5]
+\makeatletter
+\def\ps@pprintTitle{%
+	\let\@oddhead\@empty
+	\let\@evenhead\@empty
+	\def\@oddfoot{\centerline{\thepage}}%
+	\let\@evenfoot\@oddfoot}
+\makeatother
+\usepackage{setspace}
+\singlespacing
+\usepackage{mathptmx}
+\usepackage{float,wrapfig}
+\begin{document}
+
+\begin{frontmatter}
+	\title{Uranium Nitride Corrosion}
+	
+	\author[boise]{Ember L. Sikorski}
+	
+	
+	\address[boise]{Boise State University}
+	
+	\begin{abstract}
+Abstract stuff
+	\end{abstract}	
+	
+\end{frontmatter}
+
+
+\section{Introduction}
+%introduce topic
+%highlight importance of topic to nuclear power production
+%materials it affects
+%components of the reactor involved
+
+\section{Review}
+%current efforts in the area
+%may include research on demonstration of issue or mitigation strategies
+
+
+
+\section{Discussion}
+%reflect on the review
+%extrapolate strategies
+%how I expect the issue will be resolved
+%implications of the solution
+%effect on nuclear operations
+
+
+
+\section{Summary}
+%reiterate highlights
+
+
+
+
+
+
+\cite{Jolkkonen2017}
+
+
+
+
+
+\section*{References}
+CHANGE THE STYLE
+
+\bibliography{nuclear}
+\bibliographystyle{elsarticle-num}
+
+
+\end{document}  
