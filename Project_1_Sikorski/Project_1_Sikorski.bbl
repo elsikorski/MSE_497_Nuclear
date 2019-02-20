@@ -1,28 +1,34 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
-\bibitem{Jolkkonen2017}
-M.~Jolkkonen, P.~Malkki, K.~Johnson, J.~Wallenius, {Uranium nitride fuels in
-  superheated steam}, Journal of Nuclear Science and Technology~(5)  513--519.
-\newblock \href {http://dx.doi.org/10.1080/00223131.2017.1291372}
-  {\path{doi:10.1080/00223131.2017.1291372}}.
+\bibitem{Streit2005}
+M.~Streit, F.~Ingold,
+  \href{https://www.sciencedirect.com/science/article/pii/S0955221905002852}{{Nitrides
+  as a nuclear fuel option}}, Journal of the European Ceramic Society 25 (2005)
+  2687--2692.
+\newblock \href {http://dx.doi.org/10.1016/J.JEURCERAMSOC.2005.03.181}
+  {\path{doi:10.1016/J.JEURCERAMSOC.2005.03.181}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0955221905002852}
 
-\bibitem{Johnson2016}
-K.~Johnson, V.~Str{\"{o}}m, J.~Wallenius, D.~A. Lopes, Journal of Nuclear
-  Science and Technology  1--7\href
-  {http://dx.doi.org/10.1080/00223131.2016.1262297}
-  {\path{doi:10.1080/00223131.2016.1262297}}.
+\bibitem{Mizutani1998}
+A.~Mizutani, H.~Sekimoto,
+  \href{https://www.sciencedirect.com/science/article/pii/S030645499700100X}{{Core
+  performance of equilibrium fast reactors for different coolant materials and
+  fuel types}}, Annals of Nuclear Energy 25~(13) (1998) 1011--1020.
+\newblock \href {http://dx.doi.org/10.1016/S0306-4549(97)00100-X}
+  {\path{doi:10.1016/S0306-4549(97)00100-X}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S030645499700100X}
 
-\bibitem{Lu2016}
-L.~Lu, F.~Li, Y.~Hu, H.~Xiao, B.~Bai, Y.~Zhang, L.~Luo, J.~Liu, K.~Liu, {The
-  initial oxidation behaviors of uranium nitride UNx (x = 0, 0.23, 0.68,
-  1.66) films}, Journal of Nuclear Materials  189--194\href
-  {http://dx.doi.org/10.1016/J.JNUCMAT.2016.08.025}
-  {\path{doi:10.1016/J.JNUCMAT.2016.08.025}}.
+\bibitem{Silva2009}
+G.~W.~C. Silva, C.~B. Yeamans, A.~P. Sattelberger, T.~Hartmann, G.~S. Cerefice,
+  K.~R. Czerwinski, {Reaction Sequence and Kinetics of Uranium Nitride
+  Decomposition}, Inorganic Chemistry~(22)  10635--10642.
+\newblock \href {http://dx.doi.org/10.1021/ic901165j}
+  {\path{doi:10.1021/ic901165j}}.
 
 \bibitem{Lopes2017}
 D.~A. Lopes, S.~Uygur, K.~Johnson, {Degradation of UN and UN–U 3 Si 2 pellets
@@ -30,6 +36,31 @@ D.~A. Lopes, S.~Uygur, K.~Johnson, {Degradation of UN and UN–U 3 Si 2 pellets
   405--413.
 \newblock \href {http://dx.doi.org/10.1080/00223131.2016.1274689}
   {\path{doi:10.1080/00223131.2016.1274689}}.
+
+\bibitem{Johnson2016}
+K.~Johnson, V.~Str{\"{o}}m, J.~Wallenius, D.~A. Lopes, Journal of Nuclear
+  Science and Technology  1--7\href
+  {http://dx.doi.org/10.1080/00223131.2016.1262297}
+  {\path{doi:10.1080/00223131.2016.1262297}}.
+
+\bibitem{Zinkle2014}
+S.~Zinkle, K.~Terrani, J.~Gehin, L.~Ott, L.~Snead, {Accident tolerant fuels for
+  LWRs: A perspective}, Journal of Nuclear Materials 448 (2014) 374--379.
+\newblock \href {http://dx.doi.org/10.1016/j.jnucmat.2013.12.005}
+  {\path{doi:10.1016/j.jnucmat.2013.12.005}}.
+
+\bibitem{Jolkkonen2017}
+M.~Jolkkonen, P.~Malkki, K.~Johnson, J.~Wallenius, {Uranium nitride fuels in
+  superheated steam}, Journal of Nuclear Science and Technology~(5)  513--519.
+\newblock \href {http://dx.doi.org/10.1080/00223131.2017.1291372}
+  {\path{doi:10.1080/00223131.2017.1291372}}.
+
+\bibitem{Lu2016}
+L.~Lu, F.~Li, Y.~Hu, H.~Xiao, B.~Bai, Y.~Zhang, L.~Luo, J.~Liu, K.~Liu, {The
+  initial oxidation behaviors of uranium nitride UNx (x = 0, 0.23, 0.68,
+  1.66) films}, Journal of Nuclear Materials  189--194\href
+  {http://dx.doi.org/10.1016/J.JNUCMAT.2016.08.025}
+  {\path{doi:10.1016/J.JNUCMAT.2016.08.025}}.
 
 \bibitem{Bo2016}
 T.~Bo, J.-H. Lan, Y.-J. Zhang, Y.-L. Zhao, C.-H. He, Z.-F. Chai, W.-Q. Shi,
