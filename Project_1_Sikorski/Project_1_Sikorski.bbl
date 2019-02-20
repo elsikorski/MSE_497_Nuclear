@@ -14,4 +14,30 @@ M.~Jolkkonen, P.~Malkki, K.~Johnson, J.~Wallenius,
   {\path{doi:10.1080/00223131.2017.1291372}}.
 \newline\urlprefix\url{https://www.tandfonline.com/doi/full/10.1080/00223131.2017.1291372}
 
+\bibitem{Johnson2016}
+K.~Johnson, V.~Str{\"{o}}m, J.~Wallenius, D.~A. Lopes,
+  \href{https://www.tandfonline.com/doi/full/10.1080/00223131.2016.1262297}{{Oxidation
+  of accident tolerant fuel candidates}}, Journal of Nuclear Science and
+  Technology (2016) 1--7\href {http://dx.doi.org/10.1080/00223131.2016.1262297}
+  {\path{doi:10.1080/00223131.2016.1262297}}.
+\newline\urlprefix\url{https://www.tandfonline.com/doi/full/10.1080/00223131.2016.1262297}
+
+\bibitem{Lopes2017}
+D.~A. Lopes, S.~Uygur, K.~Johnson,
+  \href{https://www.tandfonline.com/doi/full/10.1080/00223131.2016.1274689}{{Degradation
+  of UN and UN–U 3 Si 2 pellets in steam environment}}, Journal of Nuclear
+  Science and Technology 54~(4) (2017) 405--413.
+\newblock \href {http://dx.doi.org/10.1080/00223131.2016.1274689}
+  {\path{doi:10.1080/00223131.2016.1274689}}.
+\newline\urlprefix\url{https://www.tandfonline.com/doi/full/10.1080/00223131.2016.1274689}
+
+\bibitem{Lu2016}
+L.~Lu, F.~Li, Y.~Hu, H.~Xiao, B.~Bai, Y.~Zhang, L.~Luo, J.~Liu, K.~Liu,
+  \href{https://www.sciencedirect.com/science/article/pii/S0022311516306304}{{The
+  initial oxidation behaviors of uranium nitride UNx (x = 0, 0.23, 0.68,
+  1.66) films}}, Journal of Nuclear Materials 480 (2016) 189--194.
+\newblock \href {http://dx.doi.org/10.1016/J.JNUCMAT.2016.08.025}
+  {\path{doi:10.1016/J.JNUCMAT.2016.08.025}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0022311516306304}
+
 \end{thebibliography}
