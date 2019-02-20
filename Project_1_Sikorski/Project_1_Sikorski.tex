@@ -65,11 +65,23 @@ Lopes et al. \cite{Lopes2017} took the work of Johnson et al. a step further by 
 \par 
 Lopes et al. placed the pellets in an autoclave, heated to 300 $^{\circ}$C, and added 9 MPa steam. Like Jolkkonen et al. and Johnson et al., the authors found reduced reactivity with reduced porosity. They found degradation increased in time, and suggested the mechanism depended on the OH and NH$_{3}$ formed during the reaction. The oxygen formed a non-protective layer and larger grains were easily fragmented due to mechanical instability.
 
-While the first three cases have considered bulk forms of UN, the next study by Lu et al. used UN films \cite{Lu2016}. To reduce the reactivity of U, which will react when coated with Al or Ti for spent fuel storage, the authors created nitrided U films by sputtering. Films of UN$_{x}$ were prepared at stoichiometries of $x$ = 0.23, 0.68, and 1.66.
+While the first three cases have considered bulk forms of UN, the next study by Lu et al. used UN films \cite{Lu2016}. To reduce the reactivity of U, which will react when coated with Al or Ti for spent fuel storage, the authors created nitrided U films by sputtering. Films of UN$_{x}$ were prepared at stoichiometries of $x$ = 0.23, 0.68, and 1.66. Their results suggested the formation of an oxynitride, OU$_{x}$N$_{y}$, phase in the UN$_{1.66}$ film. This film formed the thinnest oxide layer, suggesting the greatest resistance to corrosion. The authors reasoned that the poor oxidation resistance of the UN$_{0.68}$ film may be due to the ease with which oxygen can fill a nitrogen vacancy in UN.
 \par 
-Density functional theory has been used in several studies to probe the atomistic UN corrosion mechanism, notably by groups Bo et al. \cite{Bo2016} and Bocharov et al. \cite{Bocharov2013}.
+Density functional theory has been used in several studies to probe the atomistic UN corrosion mechanism, notably by the groups Bocharov et al. \cite{Bocharov2013} and Bo et al. \cite{Bo2016}. Bocharov studied oxygen atoms and nitrogen vacancies at the UN (100) and (110) surfaces along with a tilt grain boundary. The Gibbs free energy of defects, such as a nitrogen vacancy discussed above, can be calculated using
 
-
+\begin{equation}
+\Delta G^{N}_{F}(T) = \frac{1}{2} \bigg(E^{UN}_{def}-E^{UN}+2\mu _{N}^{0}(T)\bigg) \quad ,
+\end{equation} 
+where $E^{UN}_{def}$ is the energy of the surface with the nitrogen vacancy , $E^{UN}$ is the energy of the defect free surface, and $\mu _{N}^{0}$ is the standard nitrogen chemical potential. Bocharov et al. find that an N vacancy can forms preferentially at the (110) surface followed by the grain boundary and then the (100) surface, but the oxygen prefers to enter at the grain boundary. Regardless, oxygen incorporation yields negative energy in each case. The study ends with a proposed oxidation mechanism of \cite{Bocharov2013}: 
+\begin{enumerate}
+	\item chemisorption of O$_{2}$
+	\item dissociation of adsorbed O$_{2}$
+	\item adsorption of O atop U atoms
+	\item high mobility of O along the surface
+	\item incorporation of O at N vacancies.
+\end{enumerate}
+\par 
+Bo et al. \cite{Bo2016} extended examination of the UN surface to a full study in the presence of water. Using the (100) surface, Bo et al. studied water coverages ranging from one to four molecules (0.25 to 1 monolayer coverage). They report the adsorption energies for molecular, partially dissociated, and fully dissociated water, with partially and fully dissociated water being equally favorable. After adsorption, the authors deconstructed the energy levels using local density of states. These plots showed that the valence electrons lie on the U atoms, while the N electronic densities go to zero around 2 eV below the Fermi level.
 
 \section{Discussion}
 %reflect on the review
@@ -77,19 +89,19 @@ Density functional theory has been used in several studies to probe the atomisti
 %how I expect the issue will be resolved
 %implications of the solution
 %effect on nuclear operations
-Arkush and Liu report NO while Jolkonnen does not - environment?
+
 Combination of nitriding, adding dopants, intermetallics
 Nitriding reduces interactiong at room temperature, however at higher temperature higher stoichiometric UN decays to UN.
 Add intermetallics for ease of fabrication, nitride for room temp handling
 \par 
 
-Bo et al. \cite{Bo2016} used DFT towards determining the initiating of UN corrosion, but while they report optimally water species and adsorption sites, this does little to reveal a reaction mechanism like (1).
+Bo et al. \cite{Bo2016} used DFT towards determining the initiation of UN corrosion, but while they report optimally water species and adsorption sites, this does little to reveal a reaction mechanism like (1).
 Computational studies at odds with experiment: experiment changes starting conditions, comp changes type of study
 
 
 \begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|  }
-	%\hline
-	%\multicolumn{4}{|c|}{Experimental Parameters} \\
+	\hline
+	\multicolumn{4}{|c|}{\textbf{Table 1.} Experimental Parameters} \\
 	\hline
 	 & Starting Material &Temperature & Pressure\\
 	\hline

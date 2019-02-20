@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  20 FEB 2019 00:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  20 FEB 2019 01:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -472,17 +472,18 @@ Package mathptmx Warning: There are no bold math fonts on input line 33.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 2547) in paragraph at lines 96--96
+[2]
+Underfull \hbox (badness 2547) in paragraph at lines 108--108
 []\OT1/ptm/m/n/10.95 UN pel-lets (77 -
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 97--97
+Underfull \hbox (badness 1675) in paragraph at lines 109--109
 []\OT1/ptm/m/n/10.95 UN pow-der ($\OMS/ztmcm/m/n/10.95 ^^Y$\OT1/ptm/m/n/10.95 2
 0
  []
 
-(./Project_1_Sikorski.bbl [2]
+(./Project_1_Sikorski.bbl
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
@@ -491,36 +492,39 @@ Missing character: There is no   in font ptmr7t!
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no   in font ptmr7t!
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (./Project_1_Sikorski.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
 Package rerunfilecheck Info: File `Project_1_Sikorski.out' has not changed.
 (rerunfilecheck)             Checksum: 63F08A9960DC73B8DE0790A030414B39;175.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 6931 strings out of 493014
- 100831 string characters out of 6133351
- 200870 words of memory out of 5000000
+ 6940 strings out of 493014
+ 100889 string characters out of 6133351
+ 202870 words of memory out of 5000000
  10346 multiletter control sequences out of 15000+600000
- 35978 words of font info for 77 fonts, out of 8000000 for 9000
+ 36756 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,10n,30p,920b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,10n,30p,920b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on Project_1_Sikorski.pdf (3 pages, 86633 bytes).
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on Project_1_Sikorski.pdf (3 pages, 102825 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
