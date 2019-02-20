@@ -6,38 +6,44 @@
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
 \bibitem{Jolkkonen2017}
-M.~Jolkkonen, P.~Malkki, K.~Johnson, J.~Wallenius,
-  \href{https://www.tandfonline.com/doi/full/10.1080/00223131.2017.1291372}{{Uranium
-  nitride fuels in superheated steam}}, Journal of Nuclear Science and
-  Technology 54~(5) (2017) 513--519.
+M.~Jolkkonen, P.~Malkki, K.~Johnson, J.~Wallenius, {Uranium nitride fuels in
+  superheated steam}, Journal of Nuclear Science and Technology~(5)  513--519.
 \newblock \href {http://dx.doi.org/10.1080/00223131.2017.1291372}
   {\path{doi:10.1080/00223131.2017.1291372}}.
-\newline\urlprefix\url{https://www.tandfonline.com/doi/full/10.1080/00223131.2017.1291372}
 
 \bibitem{Johnson2016}
-K.~Johnson, V.~Str{\"{o}}m, J.~Wallenius, D.~A. Lopes,
-  \href{https://www.tandfonline.com/doi/full/10.1080/00223131.2016.1262297}{{Oxidation
-  of accident tolerant fuel candidates}}, Journal of Nuclear Science and
-  Technology (2016) 1--7\href {http://dx.doi.org/10.1080/00223131.2016.1262297}
+K.~Johnson, V.~Str{\"{o}}m, J.~Wallenius, D.~A. Lopes, Journal of Nuclear
+  Science and Technology  1--7\href
+  {http://dx.doi.org/10.1080/00223131.2016.1262297}
   {\path{doi:10.1080/00223131.2016.1262297}}.
-\newline\urlprefix\url{https://www.tandfonline.com/doi/full/10.1080/00223131.2016.1262297}
-
-\bibitem{Lopes2017}
-D.~A. Lopes, S.~Uygur, K.~Johnson,
-  \href{https://www.tandfonline.com/doi/full/10.1080/00223131.2016.1274689}{{Degradation
-  of UN and UN–U 3 Si 2 pellets in steam environment}}, Journal of Nuclear
-  Science and Technology 54~(4) (2017) 405--413.
-\newblock \href {http://dx.doi.org/10.1080/00223131.2016.1274689}
-  {\path{doi:10.1080/00223131.2016.1274689}}.
-\newline\urlprefix\url{https://www.tandfonline.com/doi/full/10.1080/00223131.2016.1274689}
 
 \bibitem{Lu2016}
-L.~Lu, F.~Li, Y.~Hu, H.~Xiao, B.~Bai, Y.~Zhang, L.~Luo, J.~Liu, K.~Liu,
-  \href{https://www.sciencedirect.com/science/article/pii/S0022311516306304}{{The
+L.~Lu, F.~Li, Y.~Hu, H.~Xiao, B.~Bai, Y.~Zhang, L.~Luo, J.~Liu, K.~Liu, {The
   initial oxidation behaviors of uranium nitride UNx (x = 0, 0.23, 0.68,
-  1.66) films}}, Journal of Nuclear Materials 480 (2016) 189--194.
-\newblock \href {http://dx.doi.org/10.1016/J.JNUCMAT.2016.08.025}
+  1.66) films}, Journal of Nuclear Materials  189--194\href
+  {http://dx.doi.org/10.1016/J.JNUCMAT.2016.08.025}
   {\path{doi:10.1016/J.JNUCMAT.2016.08.025}}.
-\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0022311516306304}
+
+\bibitem{Lopes2017}
+D.~A. Lopes, S.~Uygur, K.~Johnson, {Degradation of UN and UN–U 3 Si 2 pellets
+  in steam environment}, Journal of Nuclear Science and Technology~(4)
+  405--413.
+\newblock \href {http://dx.doi.org/10.1080/00223131.2016.1274689}
+  {\path{doi:10.1080/00223131.2016.1274689}}.
+
+\bibitem{Bo2016}
+T.~Bo, J.-H. Lan, Y.-J. Zhang, Y.-L. Zhao, C.-H. He, Z.-F. Chai, W.-Q. Shi,
+  {Adsorption and dissociation of H2O on the (001) surface of uranium
+  mononitride: energetics and mechanism from first-principles investigation},
+  Phys. Chem. Chem. Phys. 18 (2016) 13255--13266.
+\newblock \href {http://dx.doi.org/10.1039/c6cp01175f}
+  {\path{doi:10.1039/c6cp01175f}}.
+
+\bibitem{Bocharov2013}
+D.~Bocharov, D.~Gryaznov, Y.~Zhukovskii, E.~Kotomin, {Ab initio simulations of
+  oxygen interaction with surfaces and interfaces in uranium mononitride},
+  Journal of Nuclear Materials 435 (2013) 102--106.
+\newblock \href {http://dx.doi.org/10.1016/j.jnucmat.2012.12.031}
+  {\path{doi:10.1016/j.jnucmat.2012.12.031}}.
 
 \end{thebibliography}
