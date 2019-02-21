@@ -1,7 +1,9 @@
-\documentclass[3p,review,11pt]{elsarticle}
+\documentclass[11pt]{article}
+%\documentclass[3p,review,11pt]{elsarticle}
 \usepackage{lineno,hyperref,notoccite,etoolbox}
 \modulolinenumbers[5]
-\geometry{margin=1in}
+\usepackage[margin=1in]{geometry}
+
 \makeatletter
 \def\ps@pprintTitle{%
 	\let\@oddhead\@empty
@@ -13,21 +15,23 @@
 \singlespacing
 \usepackage{mathptmx}
 \usepackage{float,wrapfig}
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{15}\selectfont}
+\newcommand{\vs}{\vspace{2mm}}
 \begin{document}
 
-\begin{frontmatter}
-	\title{Understanding and Mitigating Uranium Nitride Corrosion for Use in Nuclear Reactors}
-	
-	\author{Ember L. Sikorski}
-	
-	
-	%\address[boise]{Boise State University}
-	
-	\begin{abstract}
-Uranium nitride offers higher thermal conductivity, higher melting temperature, and higher actinide density than uranium dioxide. Despite these benefits, uranium nitride is not as stable as uranium dioxide in air and readily degrades. Current research on the degradation of UN pellets, powders, and films is reviewed. Studies suggest nitriding surfaces and adding intermetallic phases may improve uranium nitride performance. Computational studies show atomistically stable configurations of adsorbates at uranium nitride surfaces.
-	\end{abstract}	
-	
-\end{frontmatter}
+\begin{center}
+Understanding and Mitigating Uranium Nitride Corrosion for Use in Nuclear Reactors \par \vs
+Ember Sikorski 
+\section*{Abstract}
+\end{center}
+
+\rule{6.2in}{0.1mm}
+\vs \par 
+Uranium nitride offers higher thermal conductivity, higher melting temperature, and higher actinide density than uranium dioxide. Despite these benefits, uranium nitride is not as stable as uranium dioxide in air and readily degrades. Current research on the degradation of UN pellets, powders, and films is reviewed. Studies suggest nitriding surfaces and adding intermetallic phases may improve uranium nitride performance. Computational studies show atomistically stable configurations of adsorbates at uranium nitride surfaces. \par 
+\rule{6.2in}{0.1mm}	
+\vs
 
 
 \section{Introduction}
@@ -129,9 +133,6 @@ The high actinide density, high thermal conductivity, and high melting temperatu
 
 
 
-
-
-\section*{References}
 
 
 \bibliography{nuclear}
