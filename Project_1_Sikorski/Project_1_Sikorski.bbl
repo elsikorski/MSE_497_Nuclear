@@ -50,6 +50,12 @@ M.~Jolkkonen, P.~Malkki, K.~Johnson, J.~Wallenius, {Uranium nitride fuels in
 \newblock \href {http://dx.doi.org/10.1080/00223131.2017.1291372}
   {\path{doi:10.1080/00223131.2017.1291372}}.
 
+\bibitem{Liu2013}
+K.~Liu, L.~Luo, L.~Luo, Z.~Long, Z.~Hong, H.~Yang, S.~Wu, {Initial oxidation
+  behaviors of nitride surfaces of uranium by XPS analysis}, Applied Surface
+  Science  268--272\href {http://dx.doi.org/10.1016/j.apsusc.2013.04.147}
+  {\path{doi:10.1016/j.apsusc.2013.04.147}}.
+
 \bibitem{Lu2016}
 L.~Lu, F.~Li, Y.~Hu, H.~Xiao, B.~Bai, Y.~Zhang, L.~Luo, J.~Liu, K.~Liu, {The
   initial oxidation behaviors of uranium nitride UNx (x = 0, 0.23, 0.68,
@@ -71,5 +77,17 @@ T.~Bo, J.-H. Lan, Y.-J. Zhang, Y.-L. Zhao, C.-H. He, Z.-F. Chai, W.-Q. Shi,
   Phys. Chem. Chem. Phys. 18 (2016) 13255--13266.
 \newblock \href {http://dx.doi.org/10.1039/c6cp01175f}
   {\path{doi:10.1039/c6cp01175f}}.
+
+\bibitem{Dell1967}
+R.~M. Dell, V.~J. Wheeler, N.~J. Bridger, {Hydrolysis of uranium mononitride},
+  Transactions of the Faraday Society~(0)  1286.
+\newblock \href {http://dx.doi.org/10.1039/tf9676301286}
+  {\path{doi:10.1039/tf9676301286}}.
+
+\bibitem{Sugihara1969}
+S.~Sugihara, S.~Imoto, {Hydrolysis of Uranium Nitrides}, Journal of Nuclear
+  Science and Technology~(5)  237--242.
+\newblock \href {http://dx.doi.org/10.1080/18811248.1969.9732878}
+  {\path{doi:10.1080/18811248.1969.9732878}}.
 
 \end{thebibliography}

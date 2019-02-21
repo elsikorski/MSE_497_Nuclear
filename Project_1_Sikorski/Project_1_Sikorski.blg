@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
+This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Project_1_Sikorski.aux
 The style file: elsarticle-num.bst
@@ -26,6 +26,8 @@ I was expecting a `,' or a `}'---line 108 of file nuclear.bib
  : volume 
  :        = {480},
 I'm skipping whatever remains of this entry
+Warning--string name "volume" is undefined
+--line 122 of file nuclear.bib
 I was expecting a `,' or a `}'---line 122 of file nuclear.bib
  : volume 
  :        = {280},
@@ -48,6 +50,22 @@ I was expecting a `,' or a `}'---line 187 of file nuclear.bib
  :  volume 
  :         = {25},
 I'm skipping whatever remains of this entry
+Warning--string name "volume" is undefined
+--line 216 of file nuclear.bib
+I was expecting a `,' or a `}'---line 216 of file nuclear.bib
+ :  volume 
+ :         = {63},
+I'm skipping whatever remains of this entry
+Warning--string name "volume" is undefined
+--line 231 of file nuclear.bib
+I was expecting a `,' or a `}'---line 231 of file nuclear.bib
+ :  volume 
+ :         = {6},
+I'm skipping whatever remains of this entry
+Repeated entry---line 235 of file nuclear.bib
+ : @article{Liu2013
+ :                 ,
+I'm skipping whatever remains of this entry
 Warning--empty year in Streit2005
 Warning--there's a number but no volume in Mizutani1998
 Warning--empty year in Mizutani1998
@@ -59,46 +77,51 @@ Warning--empty title in Johnson2016
 Warning--empty year in Johnson2016
 Warning--there's a number but no volume in Jolkkonen2017
 Warning--empty year in Jolkkonen2017
+Warning--empty year in Liu2013
 Warning--empty year in Lu2016
-You've used 10 entries,
+Warning--there's a number but no volume in Dell1967
+Warning--empty year in Dell1967
+Warning--there's a number but no volume in Sugihara1969
+Warning--empty year in Sugihara1969
+You've used 13 entries,
             2937 wiz_defined-function locations,
-            746 strings with 7421 characters,
-and the built_in function-call counts, 3599 in all, are:
-= -- 353
-> -- 148
+            767 strings with 7989 characters,
+and the built_in function-call counts, 4587 in all, are:
+= -- 450
+> -- 187
 < -- 0
-+ -- 56
-- -- 46
-* -- 326
-:= -- 519
-add.period$ -- 17
-call.type$ -- 10
-change.case$ -- 9
++ -- 71
+- -- 58
+* -- 414
+:= -- 655
+add.period$ -- 22
+call.type$ -- 13
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 80
-empty$ -- 339
-format.name$ -- 56
-if$ -- 853
+cite$ -- 30
+duplicate$ -- 104
+empty$ -- 436
+format.name$ -- 71
+if$ -- 1094
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 10
-newline$ -- 45
-num.names$ -- 10
-pop$ -- 58
+int.to.str$ -- 13
+missing$ -- 13
+newline$ -- 56
+num.names$ -- 13
+pop$ -- 77
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 180
+skip$ -- 234
 stack$ -- 0
-substring$ -- 274
-swap$ -- 23
+substring$ -- 336
+swap$ -- 29
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 12
-while$ -- 30
-width$ -- 12
-write$ -- 100
-(There were 8 error messages)
+warning$ -- 17
+while$ -- 38
+width$ -- 15
+write$ -- 128
+(There were 11 error messages)
