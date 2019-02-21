@@ -36,6 +36,21 @@ I was expecting a `,' or a `}'---line 153 of file nuclear.bib
  : volume 
  :        = {54},
 I'm skipping whatever remains of this entry
+Warning--string name "volume" is undefined
+--line 170 of file nuclear.bib
+I was expecting a `,' or a `}'---line 170 of file nuclear.bib
+ :  volume 
+ :         = {25},
+I'm skipping whatever remains of this entry
+Warning--string name "volume" is undefined
+--line 187 of file nuclear.bib
+I was expecting a `,' or a `}'---line 187 of file nuclear.bib
+ :  volume 
+ :         = {25},
+I'm skipping whatever remains of this entry
+Warning--empty year in Streit2005
+Warning--there's a number but no volume in Mizutani1998
+Warning--empty year in Mizutani1998
 Warning--there's a number but no volume in Silva2009
 Warning--empty year in Silva2009
 Warning--there's a number but no volume in Lopes2017
@@ -47,43 +62,43 @@ Warning--empty year in Jolkkonen2017
 Warning--empty year in Lu2016
 You've used 10 entries,
             2937 wiz_defined-function locations,
-            751 strings with 7565 characters,
-and the built_in function-call counts, 3675 in all, are:
-= -- 365
+            746 strings with 7421 characters,
+and the built_in function-call counts, 3599 in all, are:
+= -- 353
 > -- 148
 < -- 0
 + -- 56
 - -- 46
-* -- 341
-:= -- 533
-add.period$ -- 18
+* -- 326
+:= -- 519
+add.period$ -- 17
 call.type$ -- 10
 change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 84
-empty$ -- 348
+cite$ -- 22
+duplicate$ -- 80
+empty$ -- 339
 format.name$ -- 56
-if$ -- 874
+if$ -- 853
 int.to.chr$ -- 0
 int.to.str$ -- 10
 missing$ -- 10
-newline$ -- 48
+newline$ -- 45
 num.names$ -- 10
-pop$ -- 55
+pop$ -- 58
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 178
+skip$ -- 180
 stack$ -- 0
 substring$ -- 274
-swap$ -- 27
+swap$ -- 23
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
+warning$ -- 12
 while$ -- 30
 width$ -- 12
-write$ -- 104
-(There were 6 error messages)
+write$ -- 100
+(There were 8 error messages)

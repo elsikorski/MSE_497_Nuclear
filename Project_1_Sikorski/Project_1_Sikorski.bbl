@@ -6,22 +6,17 @@
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
 \bibitem{Streit2005}
-M.~Streit, F.~Ingold,
-  \href{https://www.sciencedirect.com/science/article/pii/S0955221905002852}{{Nitrides
-  as a nuclear fuel option}}, Journal of the European Ceramic Society 25 (2005)
-  2687--2692.
-\newblock \href {http://dx.doi.org/10.1016/J.JEURCERAMSOC.2005.03.181}
+M.~Streit, F.~Ingold, {Nitrides as a nuclear fuel option}, Journal of the
+  European Ceramic Society  2687--2692\href
+  {http://dx.doi.org/10.1016/J.JEURCERAMSOC.2005.03.181}
   {\path{doi:10.1016/J.JEURCERAMSOC.2005.03.181}}.
-\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0955221905002852}
 
 \bibitem{Mizutani1998}
-A.~Mizutani, H.~Sekimoto,
-  \href{https://www.sciencedirect.com/science/article/pii/S030645499700100X}{{Core
-  performance of equilibrium fast reactors for different coolant materials and
-  fuel types}}, Annals of Nuclear Energy 25~(13) (1998) 1011--1020.
+A.~Mizutani, H.~Sekimoto, {Core performance of equilibrium fast reactors for
+  different coolant materials and fuel types}, Annals of Nuclear Energy~(13)
+  1011--1020.
 \newblock \href {http://dx.doi.org/10.1016/S0306-4549(97)00100-X}
   {\path{doi:10.1016/S0306-4549(97)00100-X}}.
-\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S030645499700100X}
 
 \bibitem{Silva2009}
 G.~W.~C. Silva, C.~B. Yeamans, A.~P. Sattelberger, T.~Hartmann, G.~S. Cerefice,
@@ -62,6 +57,13 @@ L.~Lu, F.~Li, Y.~Hu, H.~Xiao, B.~Bai, Y.~Zhang, L.~Luo, J.~Liu, K.~Liu, {The
   {http://dx.doi.org/10.1016/J.JNUCMAT.2016.08.025}
   {\path{doi:10.1016/J.JNUCMAT.2016.08.025}}.
 
+\bibitem{Bocharov2013}
+D.~Bocharov, D.~Gryaznov, Y.~Zhukovskii, E.~Kotomin, {Ab initio simulations of
+  oxygen interaction with surfaces and interfaces in uranium mononitride},
+  Journal of Nuclear Materials 435 (2013) 102--106.
+\newblock \href {http://dx.doi.org/10.1016/j.jnucmat.2012.12.031}
+  {\path{doi:10.1016/j.jnucmat.2012.12.031}}.
+
 \bibitem{Bo2016}
 T.~Bo, J.-H. Lan, Y.-J. Zhang, Y.-L. Zhao, C.-H. He, Z.-F. Chai, W.-Q. Shi,
   {Adsorption and dissociation of H2O on the (001) surface of uranium
@@ -69,12 +71,5 @@ T.~Bo, J.-H. Lan, Y.-J. Zhang, Y.-L. Zhao, C.-H. He, Z.-F. Chai, W.-Q. Shi,
   Phys. Chem. Chem. Phys. 18 (2016) 13255--13266.
 \newblock \href {http://dx.doi.org/10.1039/c6cp01175f}
   {\path{doi:10.1039/c6cp01175f}}.
-
-\bibitem{Bocharov2013}
-D.~Bocharov, D.~Gryaznov, Y.~Zhukovskii, E.~Kotomin, {Ab initio simulations of
-  oxygen interaction with surfaces and interfaces in uranium mononitride},
-  Journal of Nuclear Materials 435 (2013) 102--106.
-\newblock \href {http://dx.doi.org/10.1016/j.jnucmat.2012.12.031}
-  {\path{doi:10.1016/j.jnucmat.2012.12.031}}.
 
 \end{thebibliography}
