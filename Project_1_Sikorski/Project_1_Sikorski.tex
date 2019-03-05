@@ -20,18 +20,18 @@
 \sectionfont{\fontsize{12}{12}\selectfont}
 \newcommand{\vs}{\vspace{2mm}}
 \usepackage{array}
-\usepackage{multicol}
+\usepackage{multicol,graphicx}
 %\renewcommand{\baselinestretch}{2} 
 
 \begin{document}
 
 \begin{center}
 \textbf{Understanding and Mitigating Uranium Nitride Corrosion for Use in Nuclear Reactors} \par \vs
-Ember Sikorski  \par 
-\textbf{Abstract}
+Ember Sikorski  \
 \end{center}
-\rule{6.5in}{0.1mm}
-\vs \par 
+\rule{6.5in}{0.1mm} \\
+\vs
+\textbf{Abstract} \\
 Before uranium nitride (UN) can be implemented as an accident tolerant fuel, its instability in air must be addressed. This review surveys current research on the degradation of UN pellets, powders, and films caused by oxygen or water. Experimental studies suggest that nitriding surfaces and adding intermetallic phases may improve uranium nitride performance. Computational studies show atomistically stable configurations of adsorbates at uranium nitride surfaces. The differences in reported UN corrosion products and avenues for mitigating corrosion are discussed.
 \\
 \rule{6.5in}{0.1mm}	
@@ -99,6 +99,12 @@ Density functional theory (DFT) has been used in several studies to probe the at
 	(5) incorporation of O at N vacancies.
 \par 
 Bo et al. \cite{Bo2016} extended examination of the UN surface to a full study in the presence of water. Using the (100) surface, Bo et al. studied water coverages ranging from one to four molecules (0.25 to 1 monolayer coverage). They reported the adsorption energies for molecular, partially dissociated, and fully dissociated water, with partially and fully dissociated water being equally favorable. After adsorption, the authors deconstructed the energy levels using local density of states. 
+\begin{figure}[h]
+
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{Bo.png}
+	\end{center}
+\end{figure}
 %what they reported, later talk about how this is useless
 \begin{table*}[!t]
 	
@@ -128,12 +134,12 @@ Bo et al. \cite{Bo2016} extended examination of the UN surface to a full study i
 
 \par With DFT, it is possible to precisely control the experimental parameters without requiring a change in setup. However, studies thus far have focused on very low oxygen and water coverages. During a real-life accident scenario, it is very unlikely a pristine surface will encounter a single O atom or water molecule. While such results may be useful for feeding into larger scale models that rely on these values for validation, such UN models have yet to be created and published. Furthermore, the discussed DFT studies reported only ideal adsorption sites, defect formation energies, orbital overlap, etc. Such data cannot be straightforwardly converted to a reaction mechanism. While Bocharov et al. \cite{Bocharov2013} proposed a mechanism, the description was given based on single atom motion and did not describe the formation of intermediaries or products.
 
-One option to simulate a more dynamic reaction mechanism would be to use a molecular dynamics (MD) model. MD can model thousands of atoms compared to DFT which is limited to approximately one hundred atoms. However, this increase in scale is at the sacrifice of quantum mechanical accuracy, as MD uses Newtonian mechanics. Thus, MD is incapable of modeling an evolving relationship between elements, such as the difference between a U atom in UN interacting with an O atom and a U atom in UN$_{x}$O$_{y}$ interacting with an O atom. To gain the benefits of the scale of MD and the quantum mechanical treatment of DFT, it is possible to use the \textit{Ab initio} molecular dynamics (AIMD) method. This method quantum mechanically calculates interactions on-the-fly, but evolves the system using Newton's second law instead of the gradient of the interaction energy. 
+One option to simulate a more dynamic reaction mechanism would be to use a molecular dynamics (MD) model. MD can model thousands of atoms compared to DFT which is limited to approximately one hundred atoms. MD also includes temperature effects, unlike DFT, which are integral to nuclear systems. However, this increase in scale and temperature consideration is at the sacrifice of quantum mechanical accuracy, as MD uses Newtonian mechanics. Thus, MD is incapable of modeling an evolving relationship between elements, such as the difference between a U atom in UN interacting with an O atom and a U atom in UN$_{x}$O$_{y}$ interacting with an O atom. To gain the benefits of the scale of MD and the quantum mechanical treatment of DFT, it is possible to use the \textit{Ab initio} molecular dynamics (AIMD) method. This method quantum mechanically calculates interactions on-the-fly, but evolves the system using Newton's second law instead of the gradient of the interaction energy. 
 %new discussion of DFT - expand on need for multiple studies 
 %if they present a mechanism, is this the only mechanism? are there competing
 %reactions?
 \par 
-To obtain information relevant to determining a UN corrosion mechanism, future computational efforts will require examination of greater oxygen and water concentrations and a survey of relevant temperatures and pressures. Due to the computational cost of DFT, 
+To obtain information relevant to determining a UN corrosion mechanism, future computational efforts will require examination of greater oxygen and water concentrations and a survey of relevant temperatures and pressures. Due to the computational cost of DFT, AIMD offers a more optimal path towards determining the UN corrosion mechanism through simulation.
 %studies so far have focused on adsorption sites and single atom movement,
 %instead of mechanistic behavior: what are the product species? what are the 
 %intermediaries required to reach the product?
@@ -154,8 +160,8 @@ If UN can be realized as a fuel, its higher thermal conductivity will result in 
 \section{Summary}
 %reiterate highlights
 The high actinide density, high thermal conductivity, and high melting temperature make UN a prospective fuel for accident tolerance in LWRs and for use in Generation IV reactors. However, its chemical instability in an atmosphere of oxygen and water have hindered its implementation. 
-\par Jolkkonen et al. \cite{Jolkkonen2017} studied UN pellets under superheated steam to better understand the UN corrosion mechanism. They found better corrosion resistance from denser pellets and residual N even after complete oxidation. Liu et al. \cite{Liu2013} used two different methods to create UN and found one method leads to oxynitride while the other leads to uranium dioxide. Johnson et al. \cite{Johnson2016} found UN-U$_{3}$Si$_{2}$ powder oxidized at approximately the same rate as pure, dense UN powder. Lopes et al. \cite{Lopes2017} also found denser pellets reacted less with steam and found grain size contributed to corrosion mechanically. Lu et al. showed higher stoichiometry UN films exhibited thinner oxide layers. Bocharov et al. \cite{Bocharov2013} showed the favorability of oxide incorporation at a nitrogen vacancy and proposed an atomistic reaction mechanism. Lastly, Bo et al. \cite{Bo2016} showed favorable dissociated water adsorption and localization of valence electrons to U.
-\par The experiments give insight into how the corrosion reaction changes with respect to experimental parameters, though the exact corrosion mechanism remains elusive. Computational studies have begun to look at single adsorption mechanisms and suggest N does not have active valence electrons. Future computational studies should investigate larger coverarages of adsorbates. 
+\par Jolkkonen et al. \cite{Jolkkonen2017} studied UN pellets under superheated steam to better understand the UN corrosion mechanism. They found better corrosion resistance from denser pellets and residual N even after complete oxidation. Liu et al. \cite{Liu2013} used two different methods to create UN and found one method leads to oxynitride while the other leads to uranium dioxide. Johnson et al. \cite{Johnson2016} found UN-U$_{3}$Si$_{2}$ powder oxidized at approximately the same rate as pure, dense UN powder. Lopes et al. \cite{Lopes2017} also found denser pellets reacted less with steam and found grain size contributed to corrosion mechanically. Lu et al. showed higher stoichiometry UN films exhibited thinner oxide layers. Bocharov et al. \cite{Bocharov2013} showed the favorability of oxide incorporation at a nitrogen vacancy and proposed an atomistic reaction mechanism. Lastly, Bo et al. \cite{Bo2016} showed favorable dissociated water adsorption.
+\par The experiments give insight into how the corrosion reaction changes with respect to experimental parameters, though the exact corrosion mechanism remains elusive. Experimental studies should work towards holding more variables constant, so that the cause of differences in resulting products can be determined explicitly. Computational studies have begun to look at single adsorption mechanisms and future studies should investigate larger adsorbate coverage, as well as pressure and temperature. 
 \par 
 UN corrosion issues may be solved through increasing density, nitriding, and the addition of dopants or intermetallics. If fully realized as a fuel, UN may reduce the severity of accidents and lead to higher burn up. The neutron economy after adjusting UN will need to be carefully considered when added to a reactor.
 
