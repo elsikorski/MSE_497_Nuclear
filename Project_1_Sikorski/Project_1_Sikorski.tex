@@ -61,12 +61,10 @@ While nuclear power initially developed uranium dioxide for the fuel pellet, the
 
 \par 
 The UN corrosion mechanism was first proposed as \cite{Dell1967,Sugihara1969}:
-
 \begin{equation}
 \mbox{UN} + 2\mbox{H}_{2}\mbox{O} \rightarrow \mbox{UO}_{2} + \mbox{NH}_{3} + \frac{1}{2} \mbox{H}_{2} \quad ,
 \end{equation}
 with an intermediary step of: 
-
 \begin{equation}
 3\mbox{UN}+2\mbox{H}_{2}\mbox{O} \rightarrow \mbox{UO}_{2}+\mbox{U}_{2}\mbox{N}_{3}+2\mbox{H}_{2} \quad .
 \end{equation}
@@ -89,7 +87,7 @@ Johnson et al. \cite{Johnson2016} turned their focus from the mechanism to a com
 \par 
  While Johnson et al. studied UN powders, Lopes et al. \cite{Lopes2017}  fabricated full pellets of UN and UN-10\%U$_{3}$Si$_{2}$. In order to reach the high densities sufficient to reduce oxidation, UN must be sintered at over 2000 $^{\circ}$C. However, this results in accelerated grain growth, creating fast diffusion pathways for both oxygen to enter and fission products to escape. To reduce this necessary temperature, an intermetallic phase of U$_{3}$Si$_{2}$ can be added during sintering.
 \par 
-Lopes et al. placed the pellets in an autoclave, heated to 300 $^{\circ}$C, and added 9 MPa steam. Like Jolkkonen et al. and Johnson et al., the authors found reduced reactivity with reduced porosity. They found degradation increased in time, and suggested the mechanism depended on the OH and NH$_{3}$ formed during the reaction. The oxygen formed a non-protective layer and larger grains were easily fragmented due to mechanical instability.
+Lopes et al. placed the pellets in an autoclave, heated to 300 $^{\circ}$C, and added 9 MPa steam. Like Jolkkonen et al. and Johnson et al., the authors found reduced reactivity with reduced porosity. They found degradation increased in time, and suggested the mechanism depended on the OH and NH$_{3}$ formed during the reaction. The oxygen formed a non-protective layer as part of a ``sandwich structure" of UO$_{2}$, U$_{2}$N$_{3}$. The larger grains were easily fragmented due to mechanical instability.
 
  Instead of studying bulk UN for fuel applications, Lu et al. \cite{Lu2016} examined UN films towards determining if N could reduce the reactivity of U during storage.  Films of UN$_{x}$ were prepared at stoichiometries of $x$ = 0.23, 0.68, and 1.66. Their results suggested the formation of an oxynitride, OU$_{x}$N$_{y}$, phase rather than UO$_{2}$ in the UN$_{1.66}$ film. This film formed the thinnest oxide layer, suggesting the greatest resistance to corrosion. The authors reasoned that the poor oxidation resistance of the UN$_{0.68}$ film may be due to the ease with which oxygen can fill a nitrogen vacancy in UN.
 \par 
@@ -102,25 +100,45 @@ Density functional theory (DFT) has been used in several studies to probe the at
 \par 
 Bo et al. \cite{Bo2016} extended examination of the UN surface to a full study in the presence of water. Using the (100) surface, Bo et al. studied water coverages ranging from one to four molecules (0.25 to 1 monolayer coverage). They reported the adsorption energies for molecular, partially dissociated, and fully dissociated water, with partially and fully dissociated water being equally favorable. After adsorption, the authors deconstructed the energy levels using local density of states. 
 %what they reported, later talk about how this is useless
-
+\begin{table*}[!t]
+	
+	\setlength{\extrarowheight}{1.5mm}
+	\begin{tabular}{ p{3.5cm} p{5cm} p{2.5cm} p{2.5cm}  }
+		
+		\multicolumn{4}{c}{\textbf{Table 1.} Select experimental parameters from studies of UN degradation in oxygen or steam.} \\
+		\hline
+		& Starting Material &Temperature & Pressure\\
+		\hline
+		Jolkkonen et al. \cite{Jolkkonen2017}   &  UN pellets (77 - 97\%TD) &400 - 425 $^{\circ}$C&  0.05 MPa \\
+		Johnson et al. \cite{Johnson2016}   & UN powder ($\approx$20 mg)     &800 $^{\circ}$C&  not reported \\
+		Lu et al. \cite{Lu2016}  & UN films    &20 $^{\circ}$C&   UHV \\
+		Lopes et al. \cite{Lopes2017}   & UN pellets (95 - 99 \% TD)    & 300 $^{\circ}$C&   9 MPa \\
+		Liu et al. & nitrided U & not reported  & UHV\\
+		\hline
+	\end{tabular}
+\end{table*}
 \section{Discussion}
 
-\par Across the studies, the experiments differed by starting material, processing of starting material, experimental methods, and reported products. To better illustrate the differences in experimental parameters, select variables are given in \textbf{Table 1}. Jolkkonen et al. reported the formation of N$_{2}$ and residual N, which directly opposes mechanism (1). Liu et al. \cite{Liu2013} reported U$_{2}$N$_{3}$ as a final product, while the initial mechanism describes it as only an intermediary (2). Jolkkonen et al. report no NO production while Liu et al. include NO in the mechanism of conversion of oxyntitride to uranium dioxide. Lopes et al. and Lu et al. both reported an oxide layer, but Lopes et al. described it as a "sandwich" of UO$_{2}$, U$_{2}$N$_{3}$ and UN while Lu et al. described it as UN$_{x}$O$_{y}$ .
+\par Across the studies, the experiments differed by starting material, processing of starting material, experimental methods, and reported products. To better illustrate the differences in experimental parameters, select variables are given in \textbf{Table 1}. In regards to reported products, one can see the formation of N$_{2}$ and residual N reported by Jolkkonen et al. \cite{Jolkkonen2017} directly opposes mechanism (1). Similarly, Liu et al. \cite{Liu2013} reported U$_{2}$N$_{3}$ as a final product, while the first proposed mechanism describes it as only an intermediary (\textbf{Eq. 2}). Jolkkonen et al. report no NO production while Liu et al. include NO in the mechanism (\textbf{Eq. 4}) of conversion of oxyntitride to uranium dioxide. Lopes et al. and Lu et al. both reported an oxide layer, but Lopes et al. described it as a "sandwich" of UO$_{2}$, U$_{2}$N$_{3}$ and UN while Lu et al. described it as UN$_{x}$O$_{y}$.
 %move to review section
- The results are highly specific to experimental parameters; Lu et al. demonstrated that whether a UO$_{2}$ or  OU$_{x}$N$_{y}$ oxide forms depends on the N concentration, and Jolkkonen et al. showed the products depended on porosity. With this variance in products, it is impossible to draft a conclusive corrosion mechanism.
+ The results are highly specific to experimental parameters; Lu et al. demonstrated that whether a UO$_{2}$ or  OU$_{x}$N$_{y}$ oxide forms depends on the N concentration, and Jolkkonen et al. showed the products depended on porosity. With this variance in methods and products, it is impossible to draft a conclusive corrosion mechanism from the current literature. To determine the mechanism experimentally, studies will have to be conducted that vary only one parameter from \textbf{Table 1}, e.g. starting material, temperature, or pressure.
 %experiments need to hold more variables constant - describe table
 %while other computational methods are available, corrosion is a chemical problem and mechanical codes such as FEA or even mesoscale models (phase field) will not help. Quantum mechanical treatment is required to 
 %M D codes require already knowing the interaction potential, and the very problem here is that we don't know how they will interact
 
-\par With DFT, it is possible to precisely control the experimental parameters without requiring a change in setup, but these studies focus on very low oxygen and water coverages. During an accident scenario, it is very unlikely a pristine surface will encounter a single O atom or water molecule. While such results may be useful for feeding into larger scale models that rely on these values for validation, such UN models have yet to be created and published. 
+\par With DFT, it is possible to precisely control the experimental parameters without requiring a change in setup. However, studies thus far have focused on very low oxygen and water coverages. During a real-life accident scenario, it is very unlikely a pristine surface will encounter a single O atom or water molecule. While such results may be useful for feeding into larger scale models that rely on these values for validation, such UN models have yet to be created and published. Furthermore, the discussed DFT studies reported only ideal adsorption sites, defect formation energies, orbital overlap, etc. Such data cannot be straightforwardly converted to a reaction mechanism. While Bocharov et al. \cite{Bocharov2013} proposed a mechanism, the description was given based on single atom motion and did not describe the formation of intermediaries or products.
+
+One option to simulate a more dynamic reaction mechanism would be to use a molecular dynamics (MD) model. MD can model thousands of atoms compared to DFT which is limited to approximately one hundred atoms. However, this increase in scale is at the sacrifice of quantum mechanical accuracy, as MD uses Newtonian mechanics. Thus, MD is incapable of modeling an evolving relationship between elements, such as the difference between a U atom in UN interacting with an O atom and a U atom in UN$_{x}$O$_{y}$ interacting with an O atom. To gain the benefits of the scale of MD and the quantum mechanical treatment of DFT, it is possible to use the \textit{Ab initio} molecular dynamics (AIMD) method. This method quantum mechanically calculates interactions on-the-fly, but evolves the system using Newton's second law instead of the gradient of the interaction energy. 
 %new discussion of DFT - expand on need for multiple studies 
 %if they present a mechanism, is this the only mechanism? are there competing
 %reactions?
-Future computational efforts will require examination of greater oxygen and water concentrations, larger surface areas, and a survey of relevant temperatures and pressures.
+\par 
+To obtain information relevant to determining a UN corrosion mechanism, future computational efforts will require examination of greater oxygen and water concentrations and a survey of relevant temperatures and pressures. Due to the computational cost of DFT, 
 %studies so far have focused on adsorption sites and single atom movement,
 %instead of mechanistic behavior: what are the product species? what are the 
 %intermediaries required to reach the product?
 %talk about AIMD
+%Bocharov gives very initial mechanism - no reveal to intermediaries, doesn't utilize spontaneous structures from DFT
 \par In spite of the lack of a definite mechanism, Lopes et al. \cite{Lopes2017} have demonstrated that U$_{3}$Si$_{2}$ can improve UN sinterability. Similarly, Lu et al. \cite{Lu2016} have shown that nitriding a uranium surface can reduce the thickness of the formed oxide layer.
 Mitigating UN corrosion will likely come from a combination of increasing density, nitriding, and adding intermetallics or dopants. First, studies have agreed on the benefit of creating a low porosity pellet to reduce reactivity \cite{Lopes2017,Johnson2016,Jolkkonen2017}. Second, nitrided pellets may resist corrosion, but if the pellet cracks it will be just as susceptible to degradation as pure UN pellets. Third, intermetallics improve ease of sintering, but whether they do or do not mitigate corrosion remains under debate. An as-of-yet unstudied dopant may prove to mitigate corrosion in the event of cracking more successfully than an intermetallic. If UN can at least be made stable in air, it can be used as a Generation IV fuel.
 \par 
@@ -129,23 +147,9 @@ If UN can be realized as a fuel, its higher thermal conductivity will result in 
 \par 
 
 
-\end{multicols}
+%\end{multicols}
 
-\setlength{\extrarowheight}{1.5mm}
-\begin{tabular}{ p{3.5cm} p{5cm} p{2.5cm} p{2.5cm}  }
-
-	\multicolumn{4}{c}{\textbf{Table 1.} Experimental Parameters} \\
-	\hline
-	 & Starting Material &Temperature & Pressure\\
-	\hline
-	Jolkkonen et al. \cite{Jolkkonen2017}   &  UN pellets (77 - 97\%TD) &400 - 425 $^{\circ}$C&  0.05 MPa \\
-	Johnson et al. \cite{Johnson2016}   & UN powder ($\approx$20 mg)     &800 $^{\circ}$C&  not reported \\
-	Lu et al. \cite{Lu2016}  & UN films    &20 $^{\circ}$C&   UHV \\
-	Lopes et al. \cite{Lopes2017}   & UN pellets (95 - 99 \% TD)    & 300 $^{\circ}$C&   9 MPa \\
-	Liu et al. & nitrided U & not reported  & UHV\\
-	\hline
-\end{tabular}
-\begin{multicols}{2}
+%\begin{multicols}{2}
 
 \section{Summary}
 %reiterate highlights
