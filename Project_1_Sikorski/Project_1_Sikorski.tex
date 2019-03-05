@@ -17,24 +17,27 @@
 \usepackage{float,wrapfig}
 
 \usepackage{sectsty}
-\sectionfont{\fontsize{12}{15}\selectfont}
+\sectionfont{\fontsize{12}{12}\selectfont}
 \newcommand{\vs}{\vspace{2mm}}
 \usepackage{array}
-\renewcommand{\baselinestretch}{2} 
+\usepackage{multicol}
+%\renewcommand{\baselinestretch}{2} 
 
 \begin{document}
 
 \begin{center}
-Understanding and Mitigating Uranium Nitride Corrosion for Use in Nuclear Reactors \par \vs
-Ember Sikorski 
-\section*{Abstract}
+\textbf{Understanding and Mitigating Uranium Nitride Corrosion for Use in Nuclear Reactors} \par \vs
+Ember Sikorski  \par 
+\textbf{Abstract}
 \end{center}
-
-\rule{6.2in}{0.1mm}
+\rule{6.5in}{0.1mm}
 \vs \par 
-Uranium nitride offers higher thermal conductivity, higher melting temperature, and higher actinide density than uranium dioxide. Despite these benefits, uranium nitride is not as stable as uranium dioxide in air and readily degrades. Current research on the degradation of UN pellets, powders, and films is reviewed. Studies suggest nitriding surfaces and adding intermetallic phases may improve uranium nitride performance. Computational studies show atomistically stable configurations of adsorbates at uranium nitride surfaces. \par 
-\rule{6.2in}{0.1mm}	
+Before uranium nitride (UN) can be implemented as an accident tolerant fuel, its instability in air must be addressed. This review surveys current research on the degradation of UN pellets, powders, and films caused by oxygen or water. Experimental studies suggest that nitriding surfaces and adding intermetallic phases may improve uranium nitride performance. Computational studies show atomistically stable configurations of adsorbates at uranium nitride surfaces. The differences in reported UN corrosion products and avenues for mitigating corrosion are discussed.
+\\
+\rule{6.5in}{0.1mm}	
 \vs
+
+\begin{multicols}{2}
 
 
 \section{Introduction}
@@ -43,13 +46,13 @@ Uranium nitride offers higher thermal conductivity, higher melting temperature, 
 %materials it affects
 %components of the reactor involved
 
-Uranium nitride (UN) is considered a prospective fuel for both light water reactors (LWRs) and Generation IV reactors \cite{Streit2005,Mizutani1998}. The higher fissile density of UN as compared to uranium dioxide benefits fast reactors given the lower neutron cross section \cite{Silva2009}. This higher actinide density additionally benefits LWRs because UN pellets can remain in the reactor longer, leading to longer time between shut downs, and reducing money lost \cite{Lopes2017}. For all reactor types, the high thermal conductivity and high melting temperature make UN an optimal material to resist accidents \cite{Lopes2017}.
+Uranium nitride (UN) is considered a prospective fuel for both light water reactors (LWRs) and Generation IV reactors \cite{Streit2005,Mizutani1998}. The higher fissile density of UN as compared to uranium dioxide benefits fast reactors given the lower neutron cross section \cite{Silva2009}. This higher actinide density additionally benefits LWRs because UN pellets can remain in the reactor longer, leading to longer time between shut downs, and reducing money lost \cite{Lopes2017}. For all reactor types, the high thermal conductivity and high melting temperature make UN an optimal material to mitigate accidents \cite{Lopes2017}.
 \par 
-While nuclear power initially developed uranium dioxide for the fuel pellet, the call for accident tolerant fuels (ATF) after Fukushima has drawn attention back to nitrides \cite{Johnson2016}. However, ATF materials must maintain current operational standards as well as improve safety \cite{Zinkle2014}. Despite the beneficial properties of UN, it is unstable the presence of steam or even air \cite{Lopes2017,Johnson2016,Jolkkonen2017}. In the event of cladding failure in a LWR, the pellet will come into contact with steam. As UN degrades, fission products will be released from the fuel matrix, free to interact with the containment structure. Furthermore, nitrogen can react with the steam to form explosive ammonium nitrate \cite{Jolkkonen2017}.
+While nuclear power initially developed uranium dioxide for the fuel pellet, the call for accident tolerant fuels (ATF) after Fukushima has drawn attention back to nitrides \cite{Johnson2016}. However, ATF materials must maintain current operational standards as well as improve safety \cite{Zinkle2014}. Despite the beneficial properties of UN, it is unstable in the presence of steam or even air \cite{Lopes2017,Johnson2016,Jolkkonen2017}. In the event of cladding failure in a LWR, the pellet will come into contact with steam. As UN degrades, fission products will be released from the fuel matrix, free to interact with the containment structure. Furthermore, nitrogen can react with the steam to form explosive ammonium nitrate \cite{Jolkkonen2017}.
 \par 
  In the case of Generation IV reactors, most designs use alternative coolants. However, the instability of UN in air hinders fabrication into a fuel pellet \cite{Lopes2017}. Short of solving UN corrosion at high temperatures and pressures for LWRs, corrosion in air must be mitigated for use as a Generation IV fuel.
  \par 
- To assess the current state of UN corrosion research, this review examines seven studies from within the past decade. The first two studies were designed to better understand UN oxidation in the presence of oxygen \cite{Liu2013} and steam \cite{Jolkkonen2017}. In the next study, Johnson et al. \cite{Johnson2016} studied oxidation rates of UN as compared to other prospective fuels.  Lu et al. \cite{Lu2016} and Lopes et al. \cite{Lopes2017} each investigated a method to mitigate UN corrosion: nitriding and introduction of an intermetallic phase, respectively. The last two studies used computational modeling to probe the atomistic initiation of UN corrosion, studying oxygen \cite{Bocharov2013} and water \cite{Bo2016} at UN surfaces. In the discussion, the discrepancies and drawbacks are examined, commentary is given on likely solutions to mitigating UN corrosion, and the prospect of UN as a fuel is given. Finally, the summary provides a synopsis of the main findings from the reviewed articles and the discussion.
+ To assess the current state of UN corrosion research, this review examines seven studies from within the past decade. The first two studies were designed to better understand UN oxidation in the presence of oxygen \cite{Liu2013} and steam \cite{Jolkkonen2017}. In the next study, Johnson et al. \cite{Johnson2016} studied oxidation rates of UN as compared to other prospective fuels.  Lu et al. \cite{Lu2016} and Lopes et al. \cite{Lopes2017} each investigated a method to mitigate UN corrosion: nitriding and introduction of an intermetallic phase, respectively. The last two studies used computational modeling to probe the atomistic initiation of UN corrosion, studying oxygen \cite{Bocharov2013} and water \cite{Bo2016} at UN surfaces. In the discussion, the discrepancies and drawbacks of the studies, possible solutions, and the prospect of UN as a fuel are examined.
 
 \section{Review}
 %current efforts in the area
@@ -62,24 +65,21 @@ The UN corrosion mechanism was first proposed as \cite{Dell1967,Sugihara1969}:
 \begin{equation}
 \mbox{UN} + 2\mbox{H}_{2}\mbox{O} \rightarrow \mbox{UO}_{2} + \mbox{NH}_{3} + \frac{1}{2} \mbox{H}_{2} \quad ,
 \end{equation}
-with an intermediary step of 
+with an intermediary step of: 
 
 \begin{equation}
 3\mbox{UN}+2\mbox{H}_{2}\mbox{O} \rightarrow \mbox{UO}_{2}+\mbox{U}_{2}\mbox{N}_{3}+2\mbox{H}_{2} \quad .
 \end{equation}
 
-
 To better understand UN corrosion, Jolkkonen et al. \cite{Jolkkonen2017} subjected UN pellets to superheated steam. The authors tried varied densities of UN pellets, ranging from 77.6\% to 97.7\% of theoretical density. Jolkkonen et al. found no NO or NO$_{2}$ was produced. Additionally, even after hydrolysis finished, residual N$_{2}$ was found in the resultant powder. The lowest density pellet resulted in the greatest amount of degradation, yielding rapid H$_{2}$ production followed by a significant release of N$_{2}$, contrasting the other pellets which gave off N almost exclusively as NH$_{3}$. The denser pellets could last up to 90 minutes while subjected to 300 $^{\circ}$C steam, but degraded as the temperature was increased to 400 $^{\circ}$C. The pellets showed different mechanical fracture modes, with the lowest density pellets turning to powder and the higher density pellets cracking into fragments. This fragmentation would further accelerate corrosion as additional surface is exposed.
 \par 
 
 Liu et al \cite{Liu2013} nitrided depleted $\alpha$-U by surface glow plasma nitriding (SGPN) and by plasma immersion ion implantation (PIII). After adding oxygen gas under ultra high vacuum (UHV), the SGPN prepared UN oxidized to U$_{2}$N$_{3}$ and O diffused into the uranium nitride. They proposed this mechanism as:
-
 \begin{equation}
 2\mbox{U}_{2}\mbox{N}_{3} +x \mbox{O}_{2} \rightarrow 2\mbox{U}_{2}\mbox{N}_{3}\mbox{O}_{x} \quad .
 \end{equation}
 
 In contrast, the PIII prepared UN formed UO$_{2+x}$ and off-gassed NO, described as:
-
 \begin{equation}
 2\mbox{UO}_{2}\mbox{N}_{x} + x\mbox{O}_{2} \rightarrow 2 \mbox{UO}_{2} + 2x\mbox{NO} \quad .
 \end{equation}
@@ -87,47 +87,49 @@ The authors described their final products left in air as UO$_{2}$ and U$_{2}$N$
 \par 
 Johnson et al. \cite{Johnson2016} turned their focus from the mechanism to a comparison of time until oxidation between UN, uranium silicide, and uranium dioxide powders. The powders were ramped to 800$^{\circ}$C while the mass was measured with thermogravimetry. At 4.4\% open porosity, UN oxidized at 320 $^{\circ}$C, determined by 5\% mass increase. On the other hand, 0.0\% open porosity UN performed better than even UO$_{2}$, with oxidation onsets of 440 $^{\circ}$C and 405 $^{\circ}$C, respectively. The UN-10\%U$_{3}$Si$_{2}$ powder performed nearly the same as the low porosity UN, with a slightly higher oxidation onset temperature of 450$^{\circ}$C but also slightly higher mass increase due to oxide formation. The authors conclude that while using U$_{3}$Si$_{2}$ in conjunction with UN may improve fabrication of UN, it does not necessarily reduce corrosion.
 \par 
-Lopes et al. \cite{Lopes2017} took the work of Johnson et al. a step further by fabricating full pellets of UN and UN-10\%U$_{3}$Si$_{2}$. In order to reach the high densities sufficient to reduce oxidation, UN must be sintered at over 2000 $^{\circ}$C. However, this results in accelerated grain growth, creating fast diffusion pathways for both oxygen to enter and fission products to escape. To reduce this necessary temperature, an intermetallic phase of U$_{3}$Si$_{2}$ can be added during sintering.
+ While Johnson et al. studied UN powders, Lopes et al. \cite{Lopes2017}  fabricated full pellets of UN and UN-10\%U$_{3}$Si$_{2}$. In order to reach the high densities sufficient to reduce oxidation, UN must be sintered at over 2000 $^{\circ}$C. However, this results in accelerated grain growth, creating fast diffusion pathways for both oxygen to enter and fission products to escape. To reduce this necessary temperature, an intermetallic phase of U$_{3}$Si$_{2}$ can be added during sintering.
 \par 
 Lopes et al. placed the pellets in an autoclave, heated to 300 $^{\circ}$C, and added 9 MPa steam. Like Jolkkonen et al. and Johnson et al., the authors found reduced reactivity with reduced porosity. They found degradation increased in time, and suggested the mechanism depended on the OH and NH$_{3}$ formed during the reaction. The oxygen formed a non-protective layer and larger grains were easily fragmented due to mechanical instability.
 
-While the first four cases have considered bulk forms of UN, the next study by Lu et al. used UN films \cite{Lu2016}. To reduce the reactivity of U, which will react when coated with Al or Ti for spent fuel storage, the authors created nitrided U films by sputtering. Films of UN$_{x}$ were prepared at stoichiometries of $x$ = 0.23, 0.68, and 1.66. Their results suggested the formation of an oxynitride, OU$_{x}$N$_{y}$, phase rather than UO$_{2}$ in the UN$_{1.66}$ film. This film formed the thinnest oxide layer, suggesting the greatest resistance to corrosion. The authors reasoned that the poor oxidation resistance of the UN$_{0.68}$ film may be due to the ease with which oxygen can fill a nitrogen vacancy in UN.
+ Instead of studying bulk UN for fuel applications, Lu et al. \cite{Lu2016} examined UN films towards determining if N could reduce the reactivity of U during storage.  Films of UN$_{x}$ were prepared at stoichiometries of $x$ = 0.23, 0.68, and 1.66. Their results suggested the formation of an oxynitride, OU$_{x}$N$_{y}$, phase rather than UO$_{2}$ in the UN$_{1.66}$ film. This film formed the thinnest oxide layer, suggesting the greatest resistance to corrosion. The authors reasoned that the poor oxidation resistance of the UN$_{0.68}$ film may be due to the ease with which oxygen can fill a nitrogen vacancy in UN.
 \par 
-Density functional theory (DFT) has been used in several studies to probe the atomistic UN corrosion mechanism, notably by the groups Bocharov et al. \cite{Bocharov2013} and Bo et al. \cite{Bo2016}. Bocharov studied oxygen atoms and nitrogen vacancies at the UN (100) and (110) surfaces along with a tilt grain boundary. The Gibbs free energy of defects, such as a nitrogen vacancy discussed above, can be calculated using
-
-\begin{equation}
-\Delta G^{N}_{F}(T) = \frac{1}{2} \bigg(E^{UN}_{def}-E^{UN}+2\mu _{N}^{0}(T)\bigg) \quad ,
-\end{equation} 
-where $E^{UN}_{def}$ is the energy of the surface with the nitrogen vacancy, $E^{UN}$ is the energy of the defect free surface, and $\mu _{N}^{0}$ is the standard nitrogen chemical potential. Bocharov et al. found that an N vacancy can form preferentially at the (110) surface followed by the grain boundary and then the (100) surface, but the oxygen prefered to enter at the grain boundary vacancy site. Regardless, oxygen incorporation yielded negative energy for each case. The study ended with a proposed oxidation mechanism of \cite{Bocharov2013}: 
-\begin{enumerate}
-	\item chemisorption of O$_{2}$
-	\item dissociation of adsorbed O$_{2}$
-	\item adsorption of O atop U atoms
-	\item high mobility of O along the surface
-	\item incorporation of O at N vacancies.
-\end{enumerate}
+Density functional theory (DFT) has been used in several studies to probe the atomistic UN corrosion mechanism, notably by the groups Bocharov et al. \cite{Bocharov2013} and Bo et al. \cite{Bo2016}. Bocharov studied oxygen atoms and nitrogen vacancies at the UN (100) and (110) surfaces along with a tilt grain boundary. Bocharov et al. found that an N vacancy can form preferentially at the (110) surface followed by the grain boundary and then the (100) surface, but the oxygen prefered to enter at the grain boundary vacancy site. Regardless, oxygen incorporation yielded negative energy for each case. The study ended with a proposed oxidation mechanism of \cite{Bocharov2013}: 
+	(1) chemisorption of O$_{2}$,
+	(2) dissociation of adsorbed O$_{2}$,
+	(3) adsorption of O atop U atoms,
+	(4) high mobility of O along the surface, and
+	(5) incorporation of O at N vacancies.
 \par 
-Bo et al. \cite{Bo2016} extended examination of the UN surface to a full study in the presence of water. Using the (100) surface, Bo et al. studied water coverages ranging from one to four molecules (0.25 to 1 monolayer coverage). They reported the adsorption energies for molecular, partially dissociated, and fully dissociated water, with partially and fully dissociated water being equally favorable. After adsorption, the authors deconstructed the energy levels using local density of states. These plots showed that the valence electrons were localized to the U atoms, while the N electronic densities went to zero starting around 2 eV below the Fermi level.
+Bo et al. \cite{Bo2016} extended examination of the UN surface to a full study in the presence of water. Using the (100) surface, Bo et al. studied water coverages ranging from one to four molecules (0.25 to 1 monolayer coverage). They reported the adsorption energies for molecular, partially dissociated, and fully dissociated water, with partially and fully dissociated water being equally favorable. After adsorption, the authors deconstructed the energy levels using local density of states. 
+%what they reported, later talk about how this is useless
 
 \section{Discussion}
-%reflect on the review
-%extrapolate strategies
-%how I expect the issue will be resolved
-%implications of the solution
-%effect on nuclear operations
 
-Across the studies, the experiments differed by starting material, processing of starting material, experimental methods, and reported products. To better illustrate the differences in experimental parameters, select variables are given in \textbf{Table 1}. Jolkkonen et al. reported the formation of N$_{2}$ and residual N, which directly opposes mechanism (1). Liu et al. \cite{Liu2013} reported U$_{2}$N$_{3}$ as a final product, while the initial mechanism describes it as only an intermediary. Jolkkonen et al. report no NO production while Liu et al. include NO in the mechanism of conversion of oxyntitride to uranium dioxide. Lopes et al. and Lu et al. both reported an oxide layer, but Lopes et al. described it as a "sandwich" of UO$_{2}$, U$_{2}$N$_{3}$ and UN while Lu et al. described it as UN$_{x}$O$_{y}$ . The results are highly specific to experimental parameters; Lu et al. demonstrated that whether a UO$_{2}$ or  OU$_{x}$N$_{y}$ oxide forms depends on the N concentration, and Jolkkonen et al. showed the products depended on porosity. With this variance in products, it is impossible to draft a conclusive corrosion mechanism.
-\par With DFT, it is possible to precisely control the experimental parameters without requiring a change in setup, but these studies focus on very low oxygen and water coverages. During an accident scenario, it is very unlikely a pristine surface will encounter a single O atom or water molecule. While such results may be useful for feeding into larger scale models that rely on these values for validation, such UN models have yet to be created and published. Nevertheless, these single adsorption studies have begun to shed light on why residual N frequently remains and nitrided U resists corrosion: at the Fermi level the electrons are entirely localized to U \cite{Bo2016}. This can be interpreted as a lack of valence N electrons available to react, and thus it acts inert in atmosphere as compared to U. Still, future computational efforts will require examination of greater oxygen and water concentrations, larger surface areas, and a survey of relevant temperatures and pressures. 
-\par 
-In spite of the lack of a definite mechanism, Lopes et al. \cite{Lopes2017} have demonstrated that U$_{3}$Si$_{2}$ can improve UN sinterability. Similarly, Lu et al. \cite{Lu2016} have shown that nitriding a uranium surface can reduce the thickness of the formed oxide layer.
+\par Across the studies, the experiments differed by starting material, processing of starting material, experimental methods, and reported products. To better illustrate the differences in experimental parameters, select variables are given in \textbf{Table 1}. Jolkkonen et al. reported the formation of N$_{2}$ and residual N, which directly opposes mechanism (1). Liu et al. \cite{Liu2013} reported U$_{2}$N$_{3}$ as a final product, while the initial mechanism describes it as only an intermediary (2). Jolkkonen et al. report no NO production while Liu et al. include NO in the mechanism of conversion of oxyntitride to uranium dioxide. Lopes et al. and Lu et al. both reported an oxide layer, but Lopes et al. described it as a "sandwich" of UO$_{2}$, U$_{2}$N$_{3}$ and UN while Lu et al. described it as UN$_{x}$O$_{y}$ .
+%move to review section
+ The results are highly specific to experimental parameters; Lu et al. demonstrated that whether a UO$_{2}$ or  OU$_{x}$N$_{y}$ oxide forms depends on the N concentration, and Jolkkonen et al. showed the products depended on porosity. With this variance in products, it is impossible to draft a conclusive corrosion mechanism.
+%experiments need to hold more variables constant - describe table
+%while other computational methods are available, corrosion is a chemical problem and mechanical codes such as FEA or even mesoscale models (phase field) will not help. Quantum mechanical treatment is required to 
+%M D codes require already knowing the interaction potential, and the very problem here is that we don't know how they will interact
+
+\par With DFT, it is possible to precisely control the experimental parameters without requiring a change in setup, but these studies focus on very low oxygen and water coverages. During an accident scenario, it is very unlikely a pristine surface will encounter a single O atom or water molecule. While such results may be useful for feeding into larger scale models that rely on these values for validation, such UN models have yet to be created and published. 
+%new discussion of DFT - expand on need for multiple studies 
+%if they present a mechanism, is this the only mechanism? are there competing
+%reactions?
+Future computational efforts will require examination of greater oxygen and water concentrations, larger surface areas, and a survey of relevant temperatures and pressures.
+%studies so far have focused on adsorption sites and single atom movement,
+%instead of mechanistic behavior: what are the product species? what are the 
+%intermediaries required to reach the product?
+%talk about AIMD
+\par In spite of the lack of a definite mechanism, Lopes et al. \cite{Lopes2017} have demonstrated that U$_{3}$Si$_{2}$ can improve UN sinterability. Similarly, Lu et al. \cite{Lu2016} have shown that nitriding a uranium surface can reduce the thickness of the formed oxide layer.
 Mitigating UN corrosion will likely come from a combination of increasing density, nitriding, and adding intermetallics or dopants. First, studies have agreed on the benefit of creating a low porosity pellet to reduce reactivity \cite{Lopes2017,Johnson2016,Jolkkonen2017}. Second, nitrided pellets may resist corrosion, but if the pellet cracks it will be just as susceptible to degradation as pure UN pellets. Third, intermetallics improve ease of sintering, but whether they do or do not mitigate corrosion remains under debate. An as-of-yet unstudied dopant may prove to mitigate corrosion in the event of cracking more successfully than an intermetallic. If UN can at least be made stable in air, it can be used as a Generation IV fuel.
 \par 
-If UN can be realized as a fuel, its higher thermal conductivity will result in a temperature at the centerline closer to that at the surface, hopefully leading to more uniform pellet expansion and reduced contact with the cladding. If the pressure between cladding and fuel can be reduced, failure of the cladding can be delayed and response time in the event of an accident increased. The nitrides, silicides, or other dopants added to the fuel will need to be accounted for in terms of neutronics, such that the use of control rods can properly be adjusted.
+If UN can be realized as a fuel, its higher thermal conductivity will result in a temperature at the centerline closer to that at the surface, ideally leading to more uniform pellet expansion and reduced contact with the cladding. If the pressure between cladding and fuel can be reduced, failure of the cladding can be delayed and response time in the event of an accident increased. The nitrides, silicides, or other dopants added to the fuel will need to be accounted for in terms of neutronics, such that the use of control rods can properly be adjusted.
 
 \par 
 
 
-
+\end{multicols}
 
 \setlength{\extrarowheight}{1.5mm}
 \begin{tabular}{ p{3.5cm} p{5cm} p{2.5cm} p{2.5cm}  }
@@ -143,6 +145,7 @@ If UN can be realized as a fuel, its higher thermal conductivity will result in 
 	Liu et al. & nitrided U & not reported  & UHV\\
 	\hline
 \end{tabular}
+\begin{multicols}{2}
 
 \section{Summary}
 %reiterate highlights
@@ -150,14 +153,7 @@ The high actinide density, high thermal conductivity, and high melting temperatu
 \par Jolkkonen et al. \cite{Jolkkonen2017} studied UN pellets under superheated steam to better understand the UN corrosion mechanism. They found better corrosion resistance from denser pellets and residual N even after complete oxidation. Liu et al. \cite{Liu2013} used two different methods to create UN and found one method leads to oxynitride while the other leads to uranium dioxide. Johnson et al. \cite{Johnson2016} found UN-U$_{3}$Si$_{2}$ powder oxidized at approximately the same rate as pure, dense UN powder. Lopes et al. \cite{Lopes2017} also found denser pellets reacted less with steam and found grain size contributed to corrosion mechanically. Lu et al. showed higher stoichiometry UN films exhibited thinner oxide layers. Bocharov et al. \cite{Bocharov2013} showed the favorability of oxide incorporation at a nitrogen vacancy and proposed an atomistic reaction mechanism. Lastly, Bo et al. \cite{Bo2016} showed favorable dissociated water adsorption and localization of valence electrons to U.
 \par The experiments give insight into how the corrosion reaction changes with respect to experimental parameters, though the exact corrosion mechanism remains elusive. Computational studies have begun to look at single adsorption mechanisms and suggest N does not have active valence electrons. Future computational studies should investigate larger coverarages of adsorbates. 
 \par 
-UN corrosion issues may be solved through increasing density, nitridin, and the addition of dopants or intermetallics. If fully realized as a fuel, UN may reduce the severity of accidents and lead to higher burn up. The neutron economy after adjusting UN will need to be carefully considered when added to a reactor.
-
-
-
-
-
-
-
+UN corrosion issues may be solved through increasing density, nitriding, and the addition of dopants or intermetallics. If fully realized as a fuel, UN may reduce the severity of accidents and lead to higher burn up. The neutron economy after adjusting UN will need to be carefully considered when added to a reactor.
 
 
 
@@ -166,4 +162,5 @@ UN corrosion issues may be solved through increasing density, nitridin, and the 
 \bibliographystyle{elsarticle-num}
 
 
+\end{multicols}
 \end{document}  
